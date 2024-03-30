@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шиндовс Семён</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 200px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .screenshots {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .screenshots img {
+      max-width: 45%;
+    }
+
+    .download-buttons {
+      text-align: center;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-image: url('down.png');
+      background-size: cover;
+      width: 200px;
+      height: 50px;
+      text-indent: -9999px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="mcs.png" alt="Мокрософт"><br>
+    </div>
+  </header>
+  <p>Самый всратый сайт в мире!</p>
+  <h1>Шиндовс Семён - ждет тебя!</h1>
+  <h3>Генерация ключа...</h3>
+
+  <script>
+    setTimeout(function() {
+      var key = "2010X";
+      key += (Math.floor(Math.random() * 3) + 1000); // Добавляем случайное число от 1000 до 1002
+      var letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+      key += letters[Math.floor(Math.random() * letters.length)]; // Добавляем случайную букву из A, B, C, D, E, F
+      key += (Math.floor(Math.random() * 3) + 1000); // Добавляем случайное число от 1000 до 1002
+
+      document.querySelector('h3').innerHTML = "Сгенерированный ключ: " + key;
+    }, 1000);
+  </script>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer>
+    <p>Сайт создан командой Мокрософт. <p>Никакие права не защищены &copy; 2024 Компания "Мокрософт"</p></p>
+  </footer>
+</body>
+</html>
